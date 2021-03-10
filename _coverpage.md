@@ -4,6 +4,5 @@
 # Go 学习笔记
 
 [GitHub](https://github.com/xmge)
-[Get Started](#quick-start)
-
+[Get Started](#Go学习笔记)
 
