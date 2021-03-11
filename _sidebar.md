@@ -5,6 +5,3 @@
 - pprof-系列文章
     - [pprof 排查内存泄漏问题](pprof/pprof排查内存泄漏问题.md)
     - [pprof 排查死锁问题](pprof/pprof排查死锁问题.md)
-    
-- 通用类工具代码
-    - [保证服务单例启动]
