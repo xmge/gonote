@@ -1,6 +1,6 @@
-module docs
+module gonote
 
-go 1.15
+go 1.16
 
 require (
 	github.com/Chronokeeper/anyxml v0.0.0-20160530174208-54457d8e98c6 // indirect
@@ -14,11 +14,11 @@ require (
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator v9.31.0+incompatible
-	github.com/go-redis/redis/v8 v8.6.0
+	github.com/go-redis/redis/v8 v8.7.1
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/jinzhu/now v1.1.1
 	github.com/leodido/go-urn v1.2.1 // indirect
-	github.com/lib/pq v1.9.0
+	github.com/lib/pq v1.10.0
 	github.com/mattn/go-sqlite3 v1.14.6 // indirect
 	github.com/nxadm/tail v1.4.8
 	github.com/syndtr/goleveldb v1.0.0 // indirect

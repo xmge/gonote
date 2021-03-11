@@ -74,3 +74,4 @@ func DeadLineHandler(writer http.ResponseWriter, request *http.Request) {
 可以看出， 在 `/Users/maning/docs/draft/deadlock.go:37` 和 
 `/Users/maning/docs/draft/deadlock.go:43` 各有 827 个 goroutine 在等待，因此我们要到这两个地方进行调查原因，
 查看为什么 goroutine 在这里阻塞，从而找到死锁的问题代码，然后解决问题。
+``
