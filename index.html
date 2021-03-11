@@ -15,6 +15,21 @@
       loadSidebar: true,
       coverpage: true,
       search: 'auto',
+      plugins: [
+        function (hook) {
+           let footer = [
+            '<hr/>',
+            '<footer>',
+            '<span><a href="https://github.com/xmge">ma.ning</a> &copy;2021.</span>',
+            '<span>Proudly published with <a href="https://github.com/xmge/gonote" target="_blank">gonote</a>.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        },
+      ]
     }
 
   </script>
