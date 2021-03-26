@@ -7,7 +7,7 @@
 因此如果有内存监控的话可以更容易发现内存泄漏的问题，这里推荐大家使用 tick （telegraf-influxdb-grafana）
 来进行系统的监控，如果有内存泄漏，监控显示大概是这样的(绿色的线为内存，每次重启内存都会释放)：
 
-![](http://qpmy9rk30.hb-bkt.clouddn.com/tick_memory_leak.png)
+![](http://qiniu.gonote.cn/tick_memory_leak.png)
 
 ## 2. 模拟内存泄漏
 
@@ -60,5 +60,5 @@ func MemoryLeak()  {
 3. 等待一段时间，10s 中左右，通过命令获取目前内存情况 `curl localhost:8080/debug/pprof/heap > heap.current`
 4. 通过对比两次内存的情况，来查看两次内存情况哪里增长比较多，找到内存泄漏的地方 `pprof -http=:8000 -base heap.base heap.current`
 5. 如图：
-![](http://qpmy9rk30.hb-bkt.clouddn.com/pprof_memory_leak.png)
+![](http://qiniu.gonote.cn/pprof_memory_leak.png)
 6. 可以发现 ppprof 工具已经提示是 MemoryLeak ，泄漏的地方就是 ioutil.ReadAll() 方法导致的，因此我们去找到相应的代码进行修改就可以修复问题了。

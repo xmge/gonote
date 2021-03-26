@@ -8,6 +8,7 @@ require (
 	github.com/CloudyKit/jet v2.1.2+incompatible // indirect
 	github.com/agrison/go-tablib v0.0.0-20160310143025-4930582c22ee // indirect
 	github.com/agrison/mxj v0.0.0-20160310142625-1269f8afb3b4 // indirect
+	github.com/astaxie/beego v1.12.3 // indirect
 	github.com/bndr/gotabulate v1.1.2 // indirect
 	github.com/briandowns/spinner v1.12.0
 	github.com/clbanning/mxj v1.8.4 // indirect
@@ -19,7 +20,6 @@ require (
 	github.com/jinzhu/now v1.1.1
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/lib/pq v1.9.0
-	github.com/mattn/go-sqlite3 v1.14.6 // indirect
 	github.com/nxadm/tail v1.4.8
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	github.com/tealeg/xlsx v1.0.5 // indirect
