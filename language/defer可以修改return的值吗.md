@@ -1,3 +1,16 @@
+# defer 可以修改 return 的返回值吗？
+
+## 问题答案
+
+如果被调用的函数，返回值有声明变量名，则 defer 可以修改返回值，否则无法修改。
+
+因为如果函数未声明返回值变量名，那么函数在 return 时，会把返回结果保存在一个临时变量 temp 中，但是在 defer 时却
+拿不到这个变量，因此 defer 无法修改
+
+但是如果函数中声明了返回值变量名，那么函数在 return 时，会把返回值保存在这个变量中，那么 defer 就可以通过修改这个
+变量来修改返回值了
+
+## 示例 Demo
 
 ```go
 package main
@@ -52,7 +65,7 @@ func test2() int {
 
 	panic(errors.New("this is panic"))
 
-	return ret(i)
+	return i
 }
 
 // 函数返回值申明变量了变量 i
@@ -69,22 +82,15 @@ func test3() (i int) {
 
 	panic(errors.New("this is panic"))
 
-	return ret(i)
-}
-
-func ret(i int) int {
-	fmt.Println("call return function")
-	i++
 	return i
 }
 
+//
+//2
+//2021/03/11 22:35:48 this is panic
+//0
+//2021/03/11 22:35:48 this is panic
+//1
 
-// test1:
-//  2
-// 2020/11/19 17:38:55 this is panic
-// test2:
-//  0
-// 2020/11/19 17:38:55 this is panic
-// test3:
-//  1
+
 ```

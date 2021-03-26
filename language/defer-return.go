@@ -50,7 +50,7 @@ func test2() int {
 
 	panic(errors.New("this is panic"))
 
-	return ret(i)
+	return i
 }
 
 // 函数返回值申明变量了变量 i
@@ -67,21 +67,15 @@ func test3() (i int) {
 
 	panic(errors.New("this is panic"))
 
-	return ret(i)
-}
-
-func ret(i int) int {
-	fmt.Println("call return function")
-	i++
 	return i
 }
 
+//
+//2
+//2021/03/11 22:35:48 this is panic
+//0
+//2021/03/11 22:35:48 this is panic
+//1
 
-// test1:
-//  2
-// 2020/11/19 17:38:55 this is panic
-// test2:
-//  0
-// 2020/11/19 17:38:55 this is panic
-// test3:
-//  1
+
+
