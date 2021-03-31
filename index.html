@@ -8,9 +8,6 @@
   <link rel="icon" href="_media/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 <body>
   <div id="app"></div>
   <script>
@@ -28,8 +25,7 @@
            let footer = [
             '<hr/>',
             '<footer>',
-            '<span><a href="https://github.com/xmge">ma.ning</a> &copy;2021.</span>',
-            '<span>Proudly published with <a href="https://github.com/xmge/gonote" target="_blank">gonote</a>.</span>',
+            '<span><a href="https://github.com/xmge"></a></span>',
             '</footer>'
           ].join('')
 
@@ -39,26 +35,6 @@
         },
       ]
     }
-
-
-
-  </script>
-
-  <!--插入“gitalk评论”模块-->
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
-  <script>
-    const gitalk = new Gitalk({
-      clientID: '25deb637a6def70b4f75',
-      clientSecret: '89726996d873ffb2c04478e7729c15a0d2310bde',
-      repo: 'gonote',
-      owner: 'xmge',
-      admin: ['xmge'],
-      id: md5(location.pathname),
-      // facebook-like distraction free mode
-      distractionFreeMode: false
-    })
     </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
