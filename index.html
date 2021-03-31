@@ -47,7 +47,7 @@
   <!--插入“gitalk评论”模块-->
   <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="js/md5.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
   <script>
     const gitalk = new Gitalk({
       clientID: '25deb637a6def70b4f75',
@@ -55,6 +55,7 @@
       repo: 'gonote',
       owner: 'xmge',
       admin: ['xmge'],
+      id: md5(location.pathname),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
