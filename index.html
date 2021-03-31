@@ -8,10 +8,13 @@
   <link rel="icon" href="_media/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
-
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 <body>
   <div id="app"></div>
   <script>
+
     window.$docsify = {
       loadSidebar: true,
       coverpage: true,
@@ -37,7 +40,25 @@
       ]
     }
 
+
+
   </script>
+
+  <!--插入“gitalk评论”模块-->
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="js/md5.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '25deb637a6def70b4f75',
+      clientSecret: '89726996d873ffb2c04478e7729c15a0d2310bde',
+      repo: 'gonote',
+      owner: 'xmge',
+      admin: ['xmge'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+    </script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1.23.0/components/prism-go.js"></script>
