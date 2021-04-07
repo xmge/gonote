@@ -1,4 +1,4 @@
-# 博客说明
+# 笔记说明
 
 ![](https://cdn.jsdelivr.net/gh/xmge/image@main/gonote/book-111123_gaitubao_774x370.png)
 
