@@ -1,14 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+type A int
 
 func main() {
-
-	for i := 0; i < 100; i++ {
-		time.Sleep(time.Second)
-		fmt.Print("\r",i)
-	}
+	print()
+	panic("aaa")
 }
